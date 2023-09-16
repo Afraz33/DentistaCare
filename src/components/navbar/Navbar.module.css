@@ -1,0 +1,72 @@
+@import "../../index.css";
+.Navbar {
+  z-index: 999;
+  margin-bottom: 0;
+  /* animation: fadeIn 1s ease-in-out forwards; */
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  background-color: rgba(182, 242, 255, 0.2);
+  color: var(--primary-color);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 10rem 1rem 10rem;
+  align-items: center; /* Add this line */
+  box-shadow: white;
+  box-shadow: 4px;
+  /* background-color: transparent; */
+  backdrop-filter: blur(20px);
+}
+
+.logoText {
+  font-size: 4.3rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.list {
+  /* display: flex;
+    flex-direction: row; */
+
+  list-style: none;
+}
+
+.listItems {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 10px 25px;
+  font-weight: 500;
+  color: rgba(0, 109, 156, 1);
+  font-size: 2.1rem;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Cabin";
+}
+
+.listItems:hover {
+  cursor: pointer;
+  border-radius: 10rem;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 109, 156, 1)) 1;
+}
+
+.button_UI {
+  font-family: "Cabin";
+
+  font-size: 2.4rem;
+  padding: 0.5rem 4rem;
+  background-color: rgba(0, 109, 156, 1);
+  color: rgb(255, 255, 255, 1);
+  font-weight: 500;
+  border-radius: 30rem;
+  border: white;
+  box-shadow: 2px 1px 10px 5px rgba(0, 173, 210, 0.21);
+}
+
+.button_UI:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
