@@ -1,6 +1,9 @@
 import styles from "./Hero.module.css";
 import heroSectionVector from "../../assets/images/heroSectionVector.svg";
 import heroImage from "../../assets/images/heroSectionImage.png";
+import vector1 from "../../assets/images/Vector 54.svg";
+import vector2 from "../../assets/images/Vector 55.svg";
+import image1 from "../../assets/images/Vector 54.png";
 function Hero() {
   return (
     <section className={styles.Hero}>
@@ -19,7 +22,9 @@ function Hero() {
             <button className={styles.appointmentButton}>
               Request Appointment
             </button>
-            <div className={styles.contactDetails}></div>
+            <p className={styles.contactDetails}>
+              or call <span className={styles.number}>+1 00099933777</span>
+            </p>
           </div>
         </div>
         <div className={styles.imageDiv}>
@@ -30,6 +35,10 @@ function Hero() {
             alt="heroImage"
           ></img>
         </div>
+      </div>
+      <div className={styles.bottomVector}>
+        <img className={styles.vector1} src={vector1} alt="vector1"></img>
+        <img className={styles.vector2} src={vector2} alt="vector2"></img>
       </div>
     </section>
   );

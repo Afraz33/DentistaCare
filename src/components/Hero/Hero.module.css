@@ -1,12 +1,13 @@
 .Hero {
+  position: relative;
   background-color: rgba(182, 242, 255, 0.2);
   height: fit-content;
   width: 100%;
   box-sizing: border-box;
-  padding: 0px 10rem;
 }
 
 .heroGrid {
+  margin: 0 10rem;
   display: flex;
   column-gap: 4rem;
   height: max-content;
@@ -48,6 +49,7 @@
 
 .appointment {
   display: flex;
+  column-gap: 2rem;
 }
 
 .appointmentButton {
@@ -77,7 +79,7 @@
 }
 
 .imageDiv {
-  margin-top: 5rem;
+  margin-top: 7rem;
   height: 100%;
   position: relative;
 }
@@ -87,4 +89,36 @@
   top: 2%;
   right: 1%;
   height: 100%;
+}
+
+.contactDetails {
+  width: 15.6rem;
+  height: 4.8rem;
+  top: 59.2rem;
+  left: 36.2rem;
+  font-family: Lato;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4re;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 109, 156, 1);
+}
+
+.number {
+  color: rgba(0, 173, 210, 1);
+  display: block;
+}
+
+.vector1 {
+  position: absolute;
+  top: 79%;
+  left: 0;
+  width: 100%;
+}
+.vector2 {
+  position: absolute;
+  top: 86%;
+  left: 0;
+  width: 100%;
 }
