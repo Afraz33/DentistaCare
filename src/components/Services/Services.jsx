@@ -3,7 +3,7 @@ import ServicesVector from "../../assets/images/ServicesVector.svg";
 import teeth_alignment from "../../assets/images/teeth_alignment.svg";
 import teeth_surgery from "../../assets/images/teeth_surgery.svg";
 import cavity from "../../assets/images/cavity.svg";
-
+import Testimonials from "../Testimonials/Testimonials";
 function Services() {
   return (
     <section className={styles.Services}>
@@ -54,6 +54,7 @@ function Services() {
         </div>
       </div>
       <button className={styles.button_UI}>View all services</button>
+      <Testimonials />
     </section>
   );
 }

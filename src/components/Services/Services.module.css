@@ -31,13 +31,15 @@
 }
 
 .servicesGrid {
+  box-sizing: border-box;
   align-items: center;
   justify-items: center;
   display: grid;
   margin-top: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 2rem;
-  width: 80%;
+  width: 100%;
+  padding: 0rem 5%;
   margin: auto;
   margin-top: 10rem;
 }
