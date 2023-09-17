@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  width: 100%;
+}
+
+.bottomVector1 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+.bottomVector2 {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.footerInfo {
+  box-sizing: border-box;
+  /* margin-top: 10rem; */
+  width: 100%;
+  padding: 2rem 0rem;
+  height: 50rem;
+  background-color: white;
+}
+
+.footerInfo2 {
+  box-sizing: border-box;
+  margin-top: 14rem;
+  width: 100%;
+  padding: 2rem 4rem;
+  height: 40rem;
+  background-color: var(--primary-color);
+  z-index: 999;
+  position: relative;
+}

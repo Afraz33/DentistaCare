@@ -1,6 +1,8 @@
 .Testimonials {
   position: relative;
   width: 100%;
+  height: fit-content;
+  padding-bottom: 4rem;
 }
 
 .TestimonialsImage {
@@ -120,5 +122,3 @@
   z-index: 999;
   margin: auto;
 }
-
-/* Increase the size of the dots */
