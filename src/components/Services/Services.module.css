@@ -39,7 +39,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 2rem;
   width: 100%;
-  padding: 0rem 5%;
+  padding: 0rem 5rem;
   margin: auto;
   margin-top: 10rem;
 }

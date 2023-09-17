@@ -1,5 +1,6 @@
 import styles from "./Testimonials.module.css";
 import fluent_teeth from "../../assets/images/fluent_teeth.svg";
+import MaskGroup from "../../assets/images/Mask group.png";
 function Testimonials() {
   return (
     <section className={styles.Testimonials}>
@@ -20,6 +21,17 @@ function Testimonials() {
           <h1 className={styles.count}>10+</h1>
           <p className={styles.description}>Doctor & Staff</p>
         </div>
+      </div>
+      <h2 className={styles.TestimonialsHeading}>
+        What Patient says{" "}
+        <span className={styles.TestimonialsHeadingSecondary}>About Us</span>
+      </h2>
+      <div className={styles.testimonialCard}>
+        <img className={styles.MaskGroup} src={MaskGroup} alt="MaskGroup"></img>
+        <h3 className={styles.testimonialText}>
+          Absolutely the best dental team! Dental assistants , hygienists, and
+          office staff are all excellent!” — Nikeyy.
+        </h3>
       </div>
       <img
         className={styles.TestimonialsImage}
