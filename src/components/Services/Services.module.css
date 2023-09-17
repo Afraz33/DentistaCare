@@ -1,0 +1,152 @@
+.Services {
+  position: relative;
+  display: flex; /* Add this */
+  flex-direction: column; /* Optional, align items vertically in a column */
+  align-items: center;
+}
+
+.image {
+  position: absolute;
+  width: 99%;
+  top: 0%;
+}
+
+.heading {
+  padding-top: 15rem;
+  margin: auto;
+  color: #006d9c;
+  font-family: Lato;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4.8rem;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 57.9rem;
+  height: 9.6rem;
+}
+
+.headingSecondary {
+  display: inline-block;
+  color: #00add2;
+}
+
+.servicesGrid {
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 31.5rem;
+  height: 35.7rem;
+
+  border-radius: 3.2rem;
+
+  border: 0.3rem solid #006d9c;
+
+  /* border-image: linear-gradient(
+    153.46deg,
+    rgba(185, 37, 99, 0) -27.59%,
+    #0b39b0 41.77%
+  ); */
+  /* border-image-slice: 1;
+  background-origin: border-box;
+  background-clip: content-box, border-box; */
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 4rem;
+}
+
+.circle {
+  width: 10.6rem;
+  height: 10.6rem;
+  border-radius: 50%;
+  background: #006d9c;
+  box-shadow: 0px 4px 18px 5px #1997cd4f;
+  align-self: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardVector {
+  width: 6.3rem;
+  height: 5.4rem;
+  text-align: center;
+}
+
+.cardTitle {
+  margin-top: 2.5rem;
+  width: fit-content;
+  height: 3.6rem;
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #006d9c;
+}
+
+.cardDescription {
+  margin-top: 1rem;
+  width: 18.4rem;
+  height: 2.4rem;
+  font-family: Lato;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #00add2;
+}
+
+.cardButton {
+  margin-top: 4rem;
+  width: 10.2rem;
+  height: 2.4rem;
+  font-family: Lato;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0b39b0;
+}
+
+.cardButton:hover {
+  cursor: pointer;
+}
+
+.button_UI {
+  width: 20.6rem;
+  height: 5.8rem;
+
+  border-radius: 3.2rem;
+  font-family: Lato;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0em;
+
+  color: #e3faff;
+  background-color: #006d9c;
+  text-align: center;
+  margin-top: 10rem;
+  border: transparent;
+  z-index: 999;
+}
+.button_UI:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}

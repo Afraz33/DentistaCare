@@ -3,7 +3,7 @@ import heroSectionVector from "../../assets/images/heroSectionVector.svg";
 import heroImage from "../../assets/images/heroSectionImage.png";
 import vector1 from "../../assets/images/Vector 54.svg";
 import vector2 from "../../assets/images/Vector 55.svg";
-import image1 from "../../assets/images/Vector 54.png";
+
 function Hero() {
   return (
     <section className={styles.Hero}>
