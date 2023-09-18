@@ -152,3 +152,18 @@
   cursor: pointer;
   background-color: var(--secondary-color);
 }
+
+.arrow {
+  width: 1.568rem;
+  height: 2.36rem;
+  align-self: last baseline;
+  z-index: 999;
+}
+
+.learnArrow {
+  z-index: 999;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
