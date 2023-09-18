@@ -93,3 +93,108 @@
   text-align: left;
   align-self: center;
 }
+
+.usefulLinks {
+  margin-top: 0.2rem;
+  width: 16.5rem;
+  height: fit-content;
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.usefulLinksGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4rem;
+  margin-top: 3rem;
+}
+
+.gridColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: fit-content;
+}
+
+.gridText {
+  margin-bottom: 3rem;
+  width: fit-content;
+  height: fit-content;
+  font-family: Lato;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(184, 240, 253, 0.8);
+}
+
+.contactInfo {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  margin-bottom: 3rem;
+  width: fit-content;
+  height: fit-content;
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.number {
+  width: fit-content;
+  height: fit-content;
+  font-family: Lato;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(147, 214, 234, 1);
+}
+
+.inquiry {
+  display: flex;
+}
+
+.inquiryText {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 0rem;
+  margin-left: 1rem;
+  display: inline-block;
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.email {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  font-family: Lato;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(184, 240, 253, 0.8);
+}
+
+.findUs {
+  margin-top: 10rem;
+  display: flex;
+}
