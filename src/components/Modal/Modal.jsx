@@ -28,8 +28,6 @@ function Modal({
       // If ZIP code is found, update the latitude and longitude fields
       handleLatChange(zipData.LAT);
       handleLonChange(zipData.LNG);
-      console.log(zipData.LAT);
-      console.log(zipData.LNG);
     } else {
       // Handle case where ZIP code is not found
       alert("ZIP code not found in data.");
