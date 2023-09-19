@@ -51,7 +51,7 @@
 }
 
 .button_UI {
-  border: 1px solid #006d9c;
+  border: 2px solid gold;
   justify-self: center;
   margin: auto;
   width: 8rem;
@@ -65,4 +65,9 @@
   letter-spacing: 0em;
   color: white;
   background-color: rgba(0, 109, 156, 1);
+}
+
+.button_UI:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }

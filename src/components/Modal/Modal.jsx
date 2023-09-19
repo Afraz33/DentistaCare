@@ -28,6 +28,8 @@ function Modal({
       // If ZIP code is found, update the latitude and longitude fields
       handleLatChange(zipData.LAT);
       handleLonChange(zipData.LNG);
+      console.log(zipData.LAT);
+      console.log(zipData.LNG);
     } else {
       // Handle case where ZIP code is not found
       alert("ZIP code not found in data.");
@@ -45,36 +47,18 @@ function Modal({
               <span className={styles.close} onClick={closeModal}>
                 &times;
               </span>
-              <h2>Location Details</h2>
-              <p style={{ marginTop: "1rem" }}>Please Enter your details</p>
-            </div>
-            <div className={styles.input_group}>
-              <label htmlFor="lat">Lat : </label>
-              <input
-                type="text"
-                id="lat"
-                name="lat"
-                value={lat}
-                onChange={handleLatChange}
-              />
+              <h2 style={{ marginLeft: "2.6rem" }}>Location Details</h2>
+              <p style={{ marginTop: "1rem", marginLeft: "2.6rem" }}>
+                Please Enter your details
+              </p>
             </div>
 
             <div className={styles.input_group}>
-              <label htmlFor="lon">Lon : </label>
-              <input
-                type="text"
-                id="lon"
-                name="lon"
-                value={lon}
-                onChange={handleLonChange}
-              />
-            </div>
-            <div className={styles.input_group}>
-              <label htmlFor="lat">Zip : </label>
+              <label htmlFor="lat">Zip Code : </label>
               <input type="text" value={zip} onChange={handleZipChange} />
             </div>
             <button className={styles.button_UI} onClick={fetchLocation}>
-              Enter
+              Show on map
             </button>
           </div>
         </div>
