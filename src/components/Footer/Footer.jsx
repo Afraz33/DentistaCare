@@ -7,7 +7,8 @@ import instagram from "../../assets/images/🦆 icon _instagram_.svg";
 import copyright from "../../assets/images/🦆 icon _copyright_.svg";
 import location from "../../assets/images/tabler_location.svg";
 import email from "../../assets/images/carbon_email.svg";
-function Footer() {
+import Map from "../Map";
+function Footer({ lat, lon }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInfo}>
@@ -66,6 +67,7 @@ function Footer() {
                 ></img>
                 <h2 className={styles.inquiryText}>Find Us</h2>
               </div>
+              <Map lat={lat} lon={lon} />
             </div>
           </div>
         </div>

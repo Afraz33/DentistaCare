@@ -1,0 +1,68 @@
+/* Modal overlay styles */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Adjust the z-index value as needed to ensure the modal is on top */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30rem;
+
+  position: relative;
+  z-index: 1001; /* Ensure modal content is on top of overlay */
+}
+
+.modal_content {
+  margin-bottom: 2rem;
+}
+.input_group {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+/* Close button styles */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.button_UI {
+  border: 1px solid #006d9c;
+  justify-self: center;
+  margin: auto;
+  width: 8rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: white;
+  background-color: rgba(0, 109, 156, 1);
+}
