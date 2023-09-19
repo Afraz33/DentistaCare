@@ -122,3 +122,47 @@
   left: 0;
   width: 100%;
 }
+
+@media (max-width: 1400px) {
+  .Hero {
+    padding-bottom: 10rem;
+  }
+
+  .imageDiv {
+    display: none;
+  }
+  .heroText {
+    margin: 7rem auto;
+    text-align: center;
+  }
+  .appointment,
+  .description {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroGrid {
+    margin: 0px;
+  }
+  .Caption {
+    width: 90%;
+    font-size: 4rem;
+    text-wrap: wrap;
+  }
+  .appointment {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .contactDetails {
+    margin-left: 1rem;
+    width: fit-content;
+    align-self: center;
+  }
+  .number {
+    display: inline-block;
+  }
+  .description {
+    width: 90%;
+  }
+}

@@ -28,7 +28,11 @@ function Hero() {
           </div>
         </div>
         <div className={styles.imageDiv}>
-          <img src={heroSectionVector} alt="heroSectionVector"></img>
+          <img
+            className={styles.heroSectionVector}
+            src={heroSectionVector}
+            alt="heroSectionVector"
+          ></img>
           <img
             className={styles.heroImage}
             src={heroImage}
