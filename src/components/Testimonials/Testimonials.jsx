@@ -3,7 +3,8 @@ import fluent_teeth from "../../assets/images/fluent_teeth.svg";
 import MaskGroup from "../../assets/images/Mask group.png";
 import React from "react";
 import Slider from "react-slick";
-
+import { useState, useEffect } from "react";
+import CountUp from "react-countup";
 function Testimonials() {
   var settings = {
     dots: true,
@@ -13,23 +14,35 @@ function Testimonials() {
     slidesToScroll: 1,
     arrows: false,
   };
+
   return (
     <section className={styles.Testimonials}>
       <div className={styles.numbers}>
         <div className={styles.numbersText}>
-          <h1 className={styles.count}>100+</h1>
+          <h1 className={styles.count}>
+            <CountUp end={100} delay={1} />+
+          </h1>
           <p className={styles.description}>Happy Patients</p>
         </div>
         <div className={styles.numbersText}>
-          <h1 className={styles.count}>50+</h1>
+          <h1 className={styles.count}>
+            {" "}
+            <CountUp end={50} delay={1} />+
+          </h1>
           <p className={styles.description}>Online Appointment</p>
         </div>
         <div className={styles.numbersText}>
-          <h1 className={styles.count}>5+</h1>
+          <h1 className={styles.count}>
+            {" "}
+            <CountUp end={5} delay={1} />+
+          </h1>
           <p className={styles.description}>Years of Experience</p>
         </div>
         <div className={styles.numbersText}>
-          <h1 className={styles.count}>10+</h1>
+          <h1 className={styles.count}>
+            {" "}
+            <CountUp end={10} delay={1} />+
+          </h1>
           <p className={styles.description}>Doctor & Staff</p>
         </div>
       </div>
