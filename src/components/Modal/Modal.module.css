@@ -21,6 +21,7 @@
   border-radius: 3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 30rem;
+  height: fit-content;
 
   position: relative;
   z-index: 1001; /* Ensure modal content is on top of overlay */
@@ -69,5 +70,32 @@
 
 .button_UI:hover {
   background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.list {
+  max-height: 20rem; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  list-style: none;
+  margin: auto;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
+
+.listItems {
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(184, 159, 17);
+}
+
+.listItems:hover {
+  background-color: var(--primary-color);
+  border: 2px solid gold;
   cursor: pointer;
 }

@@ -4,17 +4,10 @@ import { useState } from "react";
 function App() {
   const [lat, setLat] = useState(""); // State for latitude input
   const [lon, setLon] = useState(""); // State for longitude input
-  const [zip, setZip] = useState();
-
-  const handleZipChange = (event) => {
-    setZip(event.target.value);
-  };
 
   return (
     <div className="App">
       <Modal
-        zip={zip}
-        handleZipChange={handleZipChange}
         lat={lat}
         lon={lon}
         handleLatChange={setLat}

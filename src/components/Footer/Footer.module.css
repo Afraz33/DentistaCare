@@ -1,6 +1,7 @@
 .footer {
   position: relative;
   width: 100%;
+  height: fit-content;
 }
 
 .bottomVector1 {
@@ -15,11 +16,12 @@
 }
 
 .footerInfo {
+  height: fit-content;
   box-sizing: border-box;
   /* margin-top: 10rem; */
   width: 100%;
-  padding: 2rem 0rem;
-  height: 60rem;
+  padding: 0rem;
+
   background-color: white;
 }
 
@@ -28,7 +30,7 @@
   margin-top: 14rem;
   width: 100%;
   padding: 6rem;
-  height: 50rem;
+  height: fit-content;
   background-color: var(--primary-color);
   z-index: 999;
   position: relative;
@@ -60,7 +62,7 @@
 
 .followUs {
   margin-top: 2rem;
-  width: 13.1rem;
+  width: fit-content;
   height: 2rem;
   font-family: Lato;
   font-size: 3rem;
@@ -96,7 +98,7 @@
 
 .usefulLinks {
   margin-top: 0.2rem;
-  width: 16.5rem;
+  width: fit-content;
   height: fit-content;
   font-family: Lato;
   font-size: 3rem;
@@ -111,6 +113,7 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 4rem;
   margin-top: 3rem;
+  height: fit-content;
 }
 
 .gridColumn {
@@ -164,6 +167,7 @@
 
 .inquiry {
   display: flex;
+  flex-direction: column;
 }
 
 .inquiryText {
@@ -197,4 +201,87 @@
 .findUs {
   margin-top: 5rem;
   display: flex;
+}
+.button {
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.mail {
+  margin-top: -1px;
+}
+@media (max-width: 420px) {
+  .footerInfo2 {
+    padding: 6rem 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  .contactInfo {
+    justify-self: baseline;
+  }
+  .copyrights {
+    margin-top: 0rem;
+  }
+  .email {
+    margin-left: 0;
+  }
+}
+/* @media (min-width: 786px) and (max-width: 992px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto 100%;
+  }
+} */
+@media (min-width: 991px) and (max-width: 1400px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto 100%;
+  }
+  .copyrights {
+    margin-top: 0;
+  }
+  .footerInfo2 {
+    height: fit-content;
+  }
+  .inquiry {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .email {
+    margin: 0rem;
+
+    justify-self: center;
+    display: inline-block;
+  }
+  .mail {
+    display: inline-block;
+  }
+  .email_location {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 1 / span 4;
+    justify-content: space-between;
+  }
+
+  .email_location > :first-child {
+    grid-column: 1 / span 3;
+    align-self: center;
+  }
+
+  .email_location > :nth-child(3) {
+    grid-column: 1 / span 3;
+  }
+  .inquiryText {
+    display: none;
+  }
+  .findUs {
+    display: none;
+  }
 }

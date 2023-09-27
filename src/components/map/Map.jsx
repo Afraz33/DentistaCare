@@ -15,7 +15,7 @@ function Map({ lat, lon }) {
           width: "100%",
           height: "25rem",
           marginTop: "3rem",
-          borderRadius: "9%",
+          borderRadius: "20px",
         }}
         loading="lazy"
       />

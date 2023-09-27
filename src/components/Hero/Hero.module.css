@@ -14,6 +14,7 @@
 }
 
 .heroText {
+  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 4rem;
@@ -81,7 +82,12 @@
 .imageDiv {
   margin-top: 7rem;
   height: 100%;
+  width: 50vw;
   position: relative;
+}
+.heroSectionVector {
+  width: 100%;
+  height: 100%;
 }
 
 .heroImage {
@@ -122,28 +128,65 @@
   left: 0;
   width: 100%;
 }
-
+@media (max-width: 981px) {
+  .vector1 {
+    top: 90%;
+  }
+  .vector2 {
+    top: 94%;
+  }
+}
 @media (max-width: 1400px) {
   .Hero {
     padding-bottom: 10rem;
   }
-
-  .imageDiv {
-    display: none;
+  .Caption {
+    width: 90%;
+    text-wrap: wrap;
+    font-size: 4rem;
   }
-  .heroText {
+  /* .imageDiv {
+    display: none;
+  } */
+  /* .heroText {
     margin: 7rem auto;
     text-align: center;
-  }
-  .appointment,
+  } */
+  /* .appointment,
   .description {
     margin: auto;
+  } */
+  .description {
+    width: 90%;
   }
 }
-
+@media (min-width: 768px) and (max-width: 1148px) {
+  .heroText {
+    line-height: 25px;
+    margin-top: 6rem;
+  }
+  .Caption {
+    line-height: 5.2rem;
+    font-size: 5rem;
+  }
+}
 @media (max-width: 768px) {
+  .appointmentButton {
+    font-size: 18px;
+    width: fit-content;
+  }
   .heroGrid {
     margin: 0px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .heroText {
+    text-align: center;
+    margin: 0;
+    margin-top: 5rem;
+    width: 90vw;
+    align-items: center;
   }
   .Caption {
     width: 90%;
